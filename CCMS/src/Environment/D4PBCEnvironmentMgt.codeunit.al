@@ -618,7 +618,7 @@ codeunit 62000 "D4P BC Environment Mgt"
         end;
     end;
 
-    procedure UpdateApp(var BCEnvironment: Record "D4P BC Environment"; AppId: Guid; showNotification: Boolean)
+    procedure UpdateApp(var BCEnvironment: Record "D4P BC Environment"; AppId: Guid; showNotification: Boolean; UseEnvironmentUpdateWindow: Boolean)
     var
         InstalledApp: Record "D4P BC Installed App";
         BCTenant: Record "D4P BC Tenant";
@@ -638,7 +638,7 @@ codeunit 62000 "D4P BC Environment Mgt"
         if InstalledApp."Available Update Version" = '' then
             Error(NoUpdateAvailableErr);
 
-        JsonObject.Add('useEnvironmentUpdateWindow', false);
+        JsonObject.Add('useEnvironmentUpdateWindow', UseEnvironmentUpdateWindow);
         JsonObject.Add('targetVersion', InstalledApp."Available Update Version");
         JsonObject.Add('allowPreviewVersion', false);
         JsonObject.Add('installOrUpdateNeededDependencies', true);
@@ -655,6 +655,11 @@ codeunit 62000 "D4P BC Environment Mgt"
             AppUpdateNotification.Send();
         end else
             Message(AppUpdateScheduledMsg, InstalledApp."App Name", InstalledApp."Available Update Version");
+    end;
+
+    procedure UpdateApp(var BCEnvironment: Record "D4P BC Environment"; AppId: Guid; showNotification: Boolean)
+    begin
+        UpdateApp(BCEnvironment, AppId, showNotification, false);
     end;
 
     procedure CreateNewBCEnvironment(var BCTenant: Record "D4P BC Tenant"; EnvironmentName: Text[100]; Localization: Code[2]; EnvironmentType: Enum "D4P Environment Type")
