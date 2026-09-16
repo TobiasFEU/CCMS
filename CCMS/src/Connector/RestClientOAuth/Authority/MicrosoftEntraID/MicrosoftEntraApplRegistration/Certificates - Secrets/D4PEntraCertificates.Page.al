@@ -13,12 +13,22 @@ page 62036 "D4P Entra Certificates"
         {
             repeater(Control1)
             {
-                field(Code; Rec.Code) { }
-                field(Name; Rec.Name) { }
-                field("Expiry Date"; Rec."Expiry Date") { }
-                field(HasValue; Rec.HasValue)
+                field(Code; Rec.Code)
+                {
+                    ToolTip = 'Specifies the value of the Code field.';
+                }
+                field(Name; Rec.Name)
+                {
+                    ToolTip = 'Specifies the value of the Name field.';
+                }
+                field("Expiry Date"; Rec."Expiry Date")
+                {
+                    ToolTip = 'Specifies the value of the Expiry Date field.';
+                }
+                field(HasValue; Rec.HasValue())
                 {
                     Caption = 'Certificate exists';
+                    ToolTip = 'Specifies the value of the Certificate exists field.';
                 }
             }
         }
@@ -37,6 +47,7 @@ page 62036 "D4P Entra Certificates"
             {
                 Caption = 'Create Certificate';
                 Image = NewResource;
+                ToolTip = 'Enables the creation of a new certificate.';
 
                 trigger OnAction()
                 begin
@@ -48,6 +59,7 @@ page 62036 "D4P Entra Certificates"
             {
                 Caption = 'Download Certificate';
                 Image = Download;
+                ToolTip = 'Enables the download of an existing certificate.';
 
                 trigger OnAction()
                 begin

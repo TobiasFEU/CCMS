@@ -67,6 +67,7 @@ page 62043 "D4P KQL Page Executions"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var

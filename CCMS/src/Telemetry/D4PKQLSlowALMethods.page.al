@@ -87,6 +87,7 @@ page 62045 "D4P KQL Slow AL Methods"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var

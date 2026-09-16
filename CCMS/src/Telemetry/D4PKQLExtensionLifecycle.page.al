@@ -92,6 +92,7 @@ page 62042 "D4P KQL Extension Lifecycle"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var

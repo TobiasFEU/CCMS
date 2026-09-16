@@ -1131,11 +1131,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 2766253784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Application (client) ID field.</source>
+          <target>Spécifie la valeur du champ ID d'application (client).</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field App ID - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 2844596776 - Field 2766253784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Application (client) ID</source>
           <target>ID d'application (client)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field App ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 639257276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Certificate Code field.</source>
+          <target>Spécifie la valeur du champ Code du certificat.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Certificate Code - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 2844596776 - Field 639257276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Certificate code</source>
@@ -1143,11 +1155,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Certificate Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <target>Spécifie la valeur du champ Code.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Code - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 2844596776 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
           <target>Code</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 2578412327 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Display Name field.</source>
+          <target>Spécifie la valeur du champ Nom d'affichage.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Display Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 2844596776 - Field 2578412327 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Display name</source>
@@ -1167,17 +1191,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Publisher Tenant Id - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 4161998072 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Redirect Uri field.</source>
+          <target>Spécifie la valeur du champ URI de redirection.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Redirect Uri - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 2844596776 - Field 4161998072 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Redirect uri</source>
           <target>URI de redirection</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Redirect Uri - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 2212380952 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Redirect Uri Type field.</source>
+          <target>Spécifie la valeur du champ Type d'URI de redirection.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Redirect Uri Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 2844596776 - Field 2212380952 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Use built-in redirect uri</source>
           <target>Utiliser l'URI de redirection intégré</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Redirect Uri Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2844596776 - Field 3064947288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Supported Account Types field.</source>
+          <target>Spécifie la valeur du champ Types de comptes pris en charge.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P Entra App Registration - Field Supported Account Types - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 2844596776 - Field 3064947288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Supported account types</source>
@@ -1485,17 +1527,53 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2053760838 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <target>Spécifie la valeur du champ Code.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2053760838 - Control 3142631117 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Expiry Date field.</source>
+          <target>Spécifie la valeur du champ Date d'expiration.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Control Expiry Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2053760838 - Control 969791027 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Certificate exists field.</source>
+          <target>Spécifie la valeur du champ Certificat existant.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Control HasValue - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2053760838 - Control 969791027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Certificate exists</source>
           <target>Le certificat existe</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Control HasValue - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2053760838 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <target>Spécifie la valeur du champ Nom.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2053760838 - Action 1573693209 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enables the creation of a new certificate.</source>
+          <target>Permet de créer un nouveau certificat.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Action CreateCertificateAction - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2053760838 - Action 1573693209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Create Certificate</source>
           <target>Créer un certificat</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Action CreateCertificateAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2053760838 - Action 3126107337 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enables the download of an existing certificate.</source>
+          <target>Permet de télécharger un certificat existant.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Certificates - Action DownloadCertificateAction - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2053760838 - Action 3126107337 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Download Certificate</source>
@@ -1508,6 +1586,30 @@
           <target>Secrets</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 874423548 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <target>Spécifie la valeur du champ Description.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 874423548 - Control 1116687131 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the End Date/Time field.</source>
+          <target>Spécifie la valeur du champ Date/heure fin.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Control End Date/Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 874423548 - Control 415504711 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Id field.</source>
+          <target>Spécifie la valeur du champ ID.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Control Id - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 874423548 - Control 480475962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Value field.</source>
+          <target>Spécifie la valeur du champ Valeur.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Control SecretTxt - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 874423548 - Control 480475962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Value</source>
@@ -3309,17 +3411,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4202705716 - Control 1452782094 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the current environment to copy.</source>
+          <target>Spécifie le nom de l'environnement actuel à copier.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Control EnvironmentName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4202705716 - Control 1452782094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Current Environment Name</source>
           <target>Nom de l'environnement actuel</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Control EnvironmentName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4202705716 - Control 2583462898 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the new environment to create.</source>
+          <target>Spécifie le nom du nouvel environnement à créer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Control NewEnvironmentName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4202705716 - Control 2583462898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Environment Name</source>
           <target>Nouveau nom d'environnement</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Control NewEnvironmentName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4202705716 - Control 2911311483 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the new environment to create.</source>
+          <target>Spécifie le type du nouvel environnement à créer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Copy Environment Dialog - Control NewEnvironmentType - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4202705716 - Control 2911311483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Environment Type</source>
@@ -3333,17 +3453,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4025155763 - Control 1452782094 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the new environment to create.</source>
+          <target>Spécifie le nom du nouvel environnement à créer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Control EnvironmentName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4025155763 - Control 1452782094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Environment Name</source>
           <target>Nom de l’environnement</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Control EnvironmentName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4025155763 - Control 1862289695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the new environment to create.</source>
+          <target>Spécifie le type du nouvel environnement à créer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Control EnvironmentType - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4025155763 - Control 1862289695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Environment Type</source>
           <target>Type d'environnement</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Control EnvironmentType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4025155763 - Control 4068444749 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the localization for the new environment.</source>
+          <target>Spécifie la localisation du nouvel environnement.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P New Environment Dialog - Control Localization - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4025155763 - Control 4068444749 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Localization</source>
@@ -3357,11 +3495,23 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Rename Environment Dialog - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1487598943 - Control 1452782094 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the current environment to rename.</source>
+          <target>Spécifie le nom de l'environnement actuel à renommer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Rename Environment Dialog - Control EnvironmentName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1487598943 - Control 1452782094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Current Environment Name</source>
           <target>Nom de l'environnement actuel</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Rename Environment Dialog - Control EnvironmentName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1487598943 - Control 2583462898 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the new name for the environment.</source>
+          <target>Spécifie le nouveau nom de l'environnement.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P Rename Environment Dialog - Control NewEnvironmentName - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1487598943 - Control 2583462898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Environment Name</source>
@@ -3921,6 +4071,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P PTE Object Ranges - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2578280936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get installed apps from environments.</source>
+          <target>Récupère les applications installées à partir des environnements.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2578280936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get D365BC Installed Apps</source>
+          <target>Récupérer les applications installées D365BC</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2578280936 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Options</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2578280936 - Control 3248498778 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If selected, the system will also check for available updates for the installed apps after retrieval.</source>
+          <target>Si cette option est sélectionnée, le système vérifie également les mises à jour disponibles pour les applications installées après la récupération.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control GetAppUpdatesOption - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2578280936 - Control 3248498778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get App Updates After Retrieval</source>
+          <target>Récupérer les mises à jour après récupération</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control GetAppUpdatesOption - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3693902586 - EnumValue 4140905748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Installed</source>
           <target>Installé</target>
@@ -4179,12 +4359,6 @@
           <note from="Developer" annotates="general" priority="2">%1 = Error message</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method ActivateFeature - NamedType FailedToActivateErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 148382111 - NamedType 3483637739" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to obtain authentication token.</source>
-          <target>Échec de l'obtention du jeton d'authentification.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method ActivateFeature - NamedType FailedToObtainTokenErr</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 148382111 - NamedType 530085140" size-unit="char" translate="yes" xml:space="preserve">
           <source>Feature "%1" activated successfully.</source>
           <target>Fonctionnalité "%1" activée avec succès.</target>
@@ -4208,12 +4382,6 @@
           <target>Échec de la désactivation de la fonctionnalité. Détails de l'erreur : %1</target>
           <note from="Developer" annotates="general" priority="2">%1 = Error message</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method DeactivateFeature - NamedType FailedToDeactivateErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 2341653616 - NamedType 3483637739" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to obtain authentication token.</source>
-          <target>Échec de l'obtention du jeton d'authentification.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method DeactivateFeature - NamedType FailedToObtainTokenErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 2341653616 - NamedType 2587314683" size-unit="char" translate="yes" xml:space="preserve">
           <source>Feature "%1" deactivated successfully.</source>
@@ -4239,12 +4407,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFeatures - NamedType EnvironmentNotFoundErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 312510131 - NamedType 3483637739" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to obtain authentication token.</source>
-          <target>Échec de l'obtention du jeton d'authentification.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFeatures - NamedType FailedToObtainTokenErr</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 312510131 - NamedType 2797992030" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tenant not found.</source>
           <target>Locataire non trouvé.</target>
@@ -4256,12 +4418,6 @@
           <target>Impossible de trouver l'ID de la société dans la réponse.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFeaturesForCompany - NamedType CouldNotFindCompanyErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 1448873135 - NamedType 1688480260" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to parse companies response.</source>
-          <target>Échec de l'analyse de la réponse des sociétés.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFeaturesForCompany - NamedType FailedToParseErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 1448873135 - NamedType 2616538691" size-unit="char" translate="yes" xml:space="preserve">
           <source>Features API request failed. Error details: %1</source>
@@ -4293,12 +4449,6 @@
           <note from="Developer" annotates="general" priority="2">%1 = Error message</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFirstCompanyId - NamedType FailedToGetCompanyErr</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 3452752082 - NamedType 1688480260" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to parse companies response.</source>
-          <target>Échec de l'analyse de la réponse des sociétés.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFirstCompanyId - NamedType FailedToParseErr</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 3452752082 - NamedType 2973639935" size-unit="char" translate="yes" xml:space="preserve">
           <source>No companies found in the environment.</source>
           <target>Aucune société trouvée dans l'environnement.</target>
@@ -4310,12 +4460,6 @@
           <target>Aucun tableau de valeurs trouvé dans la réponse des sociétés.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method GetFirstCompanyId - NamedType NoValueArrayErr</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1849445836 - Method 1967664665 - NamedType 1688480260" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Failed to parse features JSON response.</source>
-          <target>Échec de l'analyse de la réponse JSON des fonctionnalités.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit D4P BC Features Helper - Method ProcessFeaturesResponse - NamedType FailedToParseErr</note>
         </trans-unit>
         <trans-unit id="Codeunit 1849445836 - Method 1967664665 - NamedType 1741656274" size-unit="char" translate="yes" xml:space="preserve">
           <source>No value array found in features response.</source>
@@ -6069,11 +6213,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Control TelemetryStatus - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 620516318 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unique code of the KQL query.</source>
+          <target>Spécifie le code unique de la requête KQL.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 620516318 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the KQL query.</source>
+          <target>Spécifie la description de la requête KQL.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 620516318 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the KQL query.</source>
+          <target>Spécifie le nom de la requête KQL.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Control Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 620516318 - Control 1731247478 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table ID where results will be stored. Leave blank for generic processing.</source>
           <target>ID de table où les résultats seront stockés. Laisser vide pour un traitement générique.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Control ResultTableID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 620516318 - Action 2792699792 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initializes the default set of KQL queries.</source>
+          <target>Initialise l'ensemble par défaut des requêtes KQL.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Action InitializeQueries - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 620516318 - Action 2792699792 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Initialize Default Queries</source>
@@ -6086,6 +6254,12 @@
           <target>Les requêtes KQL par défaut ont été initialisées.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Action InitializeQueries - Method OnAction - NamedType InitializedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 620516318 - Action 2632395477 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Runs the selected KQL query against the current environment.</source>
+          <target>Exécute la requête KQL sélectionnée sur l'environnement actuel.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Action RunQuery - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 620516318 - Action 2632395477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Run Query</source>
@@ -6140,6 +6314,12 @@
           <target>Requête téléchargée avec succès depuis le fichier : %1</target>
           <note from="Developer" annotates="general" priority="2">%1 = File name</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Query Preview - Method UploadQueryFromFile - NamedType QueryUploadedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 653618802 - Control 1071251071 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Displays the KQL query as text.</source>
+          <target>Affiche la requête KQL sous forme de texte.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Query Preview - Control QueryAsText - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 653618802 - Control 1071251071 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Query</source>
@@ -6878,36 +7058,6 @@
           <target>ID de locataire cible</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Tenant Migration Dialog - Control TargetTenantID - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 2578280936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get installed apps from environments.</source>
-          <target>Récupère les applications installées à partir des environnements.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 2578280936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get D365BC Installed Apps</source>
-          <target>Récupérer les applications installées D365BC</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 2578280936 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Options</source>
-          <target>Options</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control Options - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 2578280936 - Control 3248498778 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>If selected, the system will also check for available updates for the installed apps after retrieval.</source>
-          <target>Si cette option est sélectionnée, le système vérifie également les mises à jour disponibles pour les applications installées après la récupération.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control GetAppUpdatesOption - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 2578280936 - Control 3248498778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get App Updates After Retrieval</source>
-          <target>Récupérer les mises à jour après récupération</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report D4P Get Installed Apps - Control GetAppUpdatesOption - Property Caption</note>
         </trans-unit>
       </group>
     </body>

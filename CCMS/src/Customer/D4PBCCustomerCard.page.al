@@ -1,9 +1,9 @@
 namespace D4P.CCMS.Customer;
 
+using D4P.CCMS.Environment;
 using D4P.CCMS.Setup;
 using D4P.CCMS.Tenant;
 using Microsoft.Utilities;
-using D4P.CCMS.Environment;
 
 page 62001 "D4P BC Customer Card"
 {

@@ -16,14 +16,17 @@ page 62006 "D4P Copy Environment Dialog"
             {
                 Caption = 'Current Environment Name';
                 Editable = false;
+                ToolTip = 'Specifies the name of the current environment to copy.';
             }
             field(NewEnvironmentName; NewEnvironmentName)
             {
                 Caption = 'New Environment Name';
+                ToolTip = 'Specifies the name of the new environment to create.';
             }
             field(NewEnvironmentType; NewEnvironmentType)
             {
                 Caption = 'New Environment Type';
+                ToolTip = 'Specifies the type of the new environment to create.';
             }
         }
     }

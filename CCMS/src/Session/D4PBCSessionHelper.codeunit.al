@@ -228,7 +228,7 @@ codeunit 62017 "D4P BC Session Helper"
         ParsedDateTime: DateTime;
         DateTimeValue: Variant;
     begin
-        DateTimeValue := ParsedDateTime;
+        DateTimeValue := 0DT;
         if TypeHelper.Evaluate(DateTimeValue, DateTimeText, 'M/d/yyyy h:mm:ss tt', 'en-US') then begin
             ParsedDateTime := DateTimeValue;
             exit(TypeHelper.ConvertDateTimeFromInputTimeZoneToClientTimezone(ParsedDateTime, 'UTC'));

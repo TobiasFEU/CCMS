@@ -13,7 +13,6 @@ codeunit 62014 "D4P BC Features Helper"
         BCTenant: Record "D4P BC Tenant";
         APIRequestFailedErr: Label 'API request failed. Error details: %1', Comment = '%1 = Error message';
         EnvironmentNotFoundErr: Label 'Environment not found.';
-        FailedToObtainTokenErr: Label 'Failed to obtain authentication token.';
         TenantNotFoundErr: Label 'Tenant not found.';
         ResponseJson: JsonObject;
     begin
@@ -42,7 +41,6 @@ codeunit 62014 "D4P BC Features Helper"
         JArray: JsonArray;
         JToken: JsonToken;
         CouldNotFindCompanyErr: Label 'Could not find company ID in response.';
-        FailedToParseErr: Label 'Failed to parse companies response.';
         FeaturesAPIFailedErr: Label 'Features API request failed. Error details: %1', Comment = '%1 = Error message';
         NoCompaniesErr: Label 'No companies found in the environment.';
         NoValueArrayErr: Label 'No value array found in companies response.';
@@ -84,7 +82,6 @@ codeunit 62014 "D4P BC Features Helper"
         JToken: JsonToken;
         JValue: JsonValue;
         JObject: JsonObject;
-        FailedToParseErr: Label 'Failed to parse features JSON response.';
         NoValueArrayErr: Label 'No value array found in features response.';
     begin
         // Clear existing features
@@ -189,7 +186,6 @@ codeunit 62014 "D4P BC Features Helper"
         BCTenant: Record "D4P BC Tenant";
         EnvironmentNotFoundErr: Label 'Environment not found.';
         FailedToActivateErr: Label 'Failed to activate feature. Error details: %1', Comment = '%1 = Error message';
-        FailedToObtainTokenErr: Label 'Failed to obtain authentication token.';
         FeatureActivatedMsg: Label 'Feature "%1" activated successfully.', Comment = '%1 = Feature Name';
         TenantNotFoundErr: Label 'Tenant not found.';
         CompanyId: Text;
@@ -236,7 +232,6 @@ codeunit 62014 "D4P BC Features Helper"
         BCTenant: Record "D4P BC Tenant";
         EnvironmentNotFoundErr: Label 'Environment not found.';
         FailedToDeactivateErr: Label 'Failed to deactivate feature. Error details: %1', Comment = '%1 = Error message';
-        FailedToObtainTokenErr: Label 'Failed to obtain authentication token.';
         FeatureDeactivatedMsg: Label 'Feature "%1" deactivated successfully.', Comment = '%1 = Feature Name';
         TenantNotFoundErr: Label 'Tenant not found.';
         CompanyId: Text;
@@ -278,7 +273,6 @@ codeunit 62014 "D4P BC Features Helper"
         JToken: JsonToken;
         CouldNotFindCompanyErr: Label 'Could not find company ID in response.';
         FailedToGetCompanyErr: Label 'Failed to get company ID. Error details: %1', Comment = '%1 = Error message';
-        FailedToParseErr: Label 'Failed to parse companies response.';
         NoCompaniesErr: Label 'No companies found in the environment.';
         NoValueArrayErr: Label 'No value array found in companies response.';
         CompanyId: Text;

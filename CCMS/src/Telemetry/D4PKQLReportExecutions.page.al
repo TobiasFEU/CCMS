@@ -76,6 +76,7 @@ page 62044 "D4P KQL Report Executions"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var

@@ -1,10 +1,10 @@
 namespace D4P.CCMS.General;
 
+using D4P.CCMS.Capacity;
 using D4P.CCMS.Customer;
-using D4P.CCMS.Tenant;
 using D4P.CCMS.Environment;
 using D4P.CCMS.Extension;
-using D4P.CCMS.Capacity;
+using D4P.CCMS.Tenant;
 
 table 62047 "D4P BC Admin Center Cue"
 {

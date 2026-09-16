@@ -15,14 +15,17 @@ page 62005 "D4P New Environment Dialog"
             field(EnvironmentName; EnvironmentName)
             {
                 Caption = 'Environment Name';
+                ToolTip = 'Specifies the name of the new environment to create.';
             }
             field(Localization; Localization)
             {
                 Caption = 'Localization';
+                ToolTip = 'Specifies the localization for the new environment.';
             }
             field(EnvironmentType; EnvironmentType)
             {
                 Caption = 'Environment Type';
+                ToolTip = 'Specifies the type of the new environment to create.';
             }
         }
     }

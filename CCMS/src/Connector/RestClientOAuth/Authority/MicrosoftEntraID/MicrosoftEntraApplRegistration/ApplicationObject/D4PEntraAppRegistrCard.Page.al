@@ -3,6 +3,7 @@ page 62033 "D4P Entra App Registr. Card"
 {
     Caption = 'Microsoft Entra App Registration';
     ApplicationArea = All;
+    UsageCategory = None;
     SourceTable = "D4P Entra App Registration";
     PageType = Card;
 

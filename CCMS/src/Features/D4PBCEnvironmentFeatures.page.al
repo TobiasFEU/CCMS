@@ -4,6 +4,7 @@ page 62013 "D4P BC Environment Features"
 {
     PageType = List;
     ApplicationArea = All;
+    UsageCategory = None;
     SourceTable = "D4P BC Environment Feature";
     Caption = 'D365BC Environment Features';
     InsertAllowed = false;

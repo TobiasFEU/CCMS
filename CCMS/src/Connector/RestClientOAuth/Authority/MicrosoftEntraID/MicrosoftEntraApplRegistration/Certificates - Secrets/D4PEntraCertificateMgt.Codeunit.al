@@ -9,7 +9,7 @@ codeunit 62010 "D4P Entra Certificate Mgt"
         TimeHelper: Codeunit "D4P Time Helper";
         SubjectNameTxt: Label 'CN=%1', Locked = true;
 
-    procedure CreateSelfSignedCertificate(SubjectName: Text; ExpiryDate: Date) EntraCertificate: Record "D4P Entra Certificate";
+    procedure CreateSelfSignedCertificate(SubjectName: Text[100]; ExpiryDate: Date) EntraCertificate: Record "D4P Entra Certificate";
     begin
         EntraCertificate.Init();
         EntraCertificate.Name := SubjectName;

@@ -13,16 +13,19 @@ table 62007 "D4P Entra App Registration"
             Caption = 'Code';
             DataClassification = SystemMetadata;
             NotBlank = true;
+            ToolTip = 'Specifies the value of the Code field.';
         }
         field(2; "Display Name"; Text[100])
         {
             Caption = 'Display name';
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Display Name field.';
         }
         field(3; "App ID"; Text[36])
         {
             Caption = 'Application (client) ID';
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Application (client) ID field.';
 
             trigger OnValidate()
             var
@@ -31,7 +34,7 @@ table 62007 "D4P Entra App Registration"
                 if Rec."App ID" = '' then
                     exit;
                 Evaluate(Guid, Rec."App ID");
-                Rec."App ID" := Format(Guid, 0, 4).ToLower();
+                Rec."App ID" := CopyStr(Format(Guid, 0, 4).ToLower(), 1, MaxStrLen(Rec."App ID"));
             end;
         }
         field(4; "Publisher Tenant Id"; Text[100])
@@ -45,37 +48,41 @@ table 62007 "D4P Entra App Registration"
                 Guid: Guid;
             begin
                 if Evaluate(Guid, Rec."Publisher Tenant Id") then
-                    Rec."Publisher Tenant Id" := Format(Guid, 0, 4).ToLower();
+                    Rec."Publisher Tenant Id" := CopyStr(Format(Guid, 0, 4).ToLower(), 1, MaxStrLen(Rec."Publisher Tenant Id"));
             end;
         }
         field(5; "Supported Account Types"; Enum "D4P Entra Account Types")
         {
             Caption = 'Supported account types';
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Supported Account Types field.';
         }
         field(6; "Certificate Code"; Code[20])
         {
             Caption = 'Certificate code';
             TableRelation = "D4P Entra Certificate";
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Certificate Code field.';
         }
         field(7; "Redirect Uri Type"; Enum "D4P Redirect URI Type")
         {
             Caption = 'Use built-in redirect uri';
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Redirect Uri Type field.';
 
             trigger OnValidate()
             var
                 RedirectURI: Interface "D4P Redirect URI";
             begin
                 RedirectURI := "Redirect Uri Type";
-                "Redirect Uri" := RedirectURI.GetDefaultRedirectURI();
+                "Redirect Uri" := CopyStr(RedirectURI.GetDefaultRedirectURI(), 1, MaxStrLen("Redirect Uri"));
             end;
         }
         field(8; "Redirect Uri"; Text[250])
         {
             Caption = 'Redirect uri';
             DataClassification = CustomerContent;
+            ToolTip = 'Specifies the value of the Redirect Uri field.';
         }
     }
 

@@ -15,11 +15,13 @@ page 62007 "D4P Rename Environment Dialog"
             field(EnvironmentName; EnvironmentName)
             {
                 Caption = 'Current Environment Name';
+                ToolTip = 'Specifies the name of the current environment to rename.';
                 Editable = false;
             }
             field(NewEnvironmentName; NewEnvironmentName)
             {
                 Caption = 'New Environment Name';
+                ToolTip = 'Specifies the new name for the environment.';
             }
         }
     }

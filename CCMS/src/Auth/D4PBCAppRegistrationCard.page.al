@@ -3,6 +3,7 @@ namespace D4P.CCMS.Auth;
 page 62026 "D4P BC App Registration Card"
 {
     PageType = Card;
+    UsageCategory = None;
     ApplicationArea = All;
     SourceTable = "D4P BC App Registration";
     Caption = 'D365BC App Registration Card';

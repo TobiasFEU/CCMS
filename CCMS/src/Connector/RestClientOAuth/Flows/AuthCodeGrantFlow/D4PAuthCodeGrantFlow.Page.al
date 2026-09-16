@@ -71,6 +71,7 @@ page 62038 "D4P Auth. Code Grant Flow"
             {
                 Caption = 'Cancel';
                 InFooterBar = true;
+                Image = Cancel;
 
                 trigger OnAction()
                 begin
@@ -140,11 +141,10 @@ page 62038 "D4P Auth. Code Grant Flow"
             exit;
 
         ParameterList := Parameters.Split('&');
-        foreach Parameter in ParameterList do begin
+        foreach Parameter in ParameterList do
             if Parameter.StartsWith(Property) then begin
                 Value := Parameter.Split('=').Get(2);
                 exit;
             end;
-        end;
     end;
 }

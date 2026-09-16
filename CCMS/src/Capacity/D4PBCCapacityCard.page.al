@@ -6,6 +6,7 @@ page 62023 "D4P BC Capacity Card"
 {
     PageType = Card;
     ApplicationArea = All;
+    UsageCategory = None;
     SourceTable = "D4P BC Capacity Line";
     Caption = 'Environment Capacity Details';
     InsertAllowed = false;
@@ -72,6 +73,7 @@ page 62023 "D4P BC Capacity Card"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                PromotedOnly = true;
 
                 trigger OnAction()
                 var

@@ -78,60 +78,60 @@ codeunit 62000 "D4P BC Environment Mgt"
     begin
         if JsonObject.Get('name', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment.Name := JsonValue.AsText();
+            BCEnvironment.Name := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment.Name));
         end;
         if JsonObject.Get('applicationFamily', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Application Family" := JsonValue.AsText();
+            BCEnvironment."Application Family" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Application Family"));
         end;
         if JsonObject.Get('type', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment.Type := JsonValue.AsText();
+            BCEnvironment.Type := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment.Type));
         end;
         if JsonObject.Get('status', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment.State := JsonValue.AsText();
+            BCEnvironment.State := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment.State));
         end;
         if JsonObject.Get('countryCode', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Country/Region" := JsonValue.AsText();
+            BCEnvironment."Country/Region" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Country/Region"));
         end;
         if JsonObject.Get('applicationVersion', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Current Version" := JsonValue.AsText();
+            BCEnvironment."Current Version" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Current Version"));
         end;
         if JsonObject.Get('friendlyName', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Friendly Name" := JsonValue.AsText();
+            BCEnvironment."Friendly Name" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Friendly Name"));
         end;
         if JsonObject.Get('aadTenantId', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            if not Evaluate(BCEnvironment."AAD Tenant ID", JsonValue.AsText()) then
+            if not Evaluate(BCEnvironment."AAD Tenant ID", CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."AAD Tenant ID"))) then
                 BCEnvironment."AAD Tenant ID" := CreateGuid(); // Fallback if evaluation fails
         end;
         if JsonObject.Get('webClientLoginUrl', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Web Client Login URL" := JsonValue.AsText();
+            BCEnvironment."Web Client Login URL" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Web Client Login URL"));
         end;
         if JsonObject.Get('webServiceUrl', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Web Service URL" := JsonValue.AsText();
+            BCEnvironment."Web Service URL" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Web Service URL"));
         end;
         if JsonObject.Get('locationName', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Location Name" := JsonValue.AsText();
+            BCEnvironment."Location Name" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Location Name"));
         end;
         if JsonObject.Get('geoName', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Geo Name" := JsonValue.AsText();
+            BCEnvironment."Geo Name" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Geo Name"));
         end;
         if JsonObject.Get('ringName', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Ring Name" := JsonValue.AsText();
+            BCEnvironment."Ring Name" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Ring Name"));
         end;
         if JsonObject.Get('appInsightsKey', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Application Insights String" := JsonValue.AsText();
+            BCEnvironment."Application Insights String" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Application Insights String"));
         end;
         if JsonObject.Get('SoftDeletedOn', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
@@ -145,19 +145,19 @@ codeunit 62000 "D4P BC Environment Mgt"
         end;
         if JsonObject.Get('DeleteReason', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Delete Reason" := JsonValue.AsText();
+            BCEnvironment."Delete Reason" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Delete Reason"));
         end;
         if JsonObject.Get('appSourceAppsUpdateCadence', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."AppSource Apps Update Cadence" := JsonValue.AsText();
+            BCEnvironment."AppSource Apps Update Cadence" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."AppSource Apps Update Cadence"));
         end;
         if JsonObject.Get('platformVersion', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Platform Version" := JsonValue.AsText();
+            BCEnvironment."Platform Version" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Platform Version"));
         end;
         if JsonObject.Get('linkedPowerPlatformEnvironmentId', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            BCEnvironment."Linked PowerPlatform Env ID" := JsonValue.AsText();
+            BCEnvironment."Linked PowerPlatform Env ID" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(BCEnvironment."Linked PowerPlatform Env ID"));
         end;
         // Handle nested versionDetails object
         if JsonObject.Get('versionDetails', JsonTokenField) then
@@ -286,15 +286,15 @@ codeunit 62000 "D4P BC Environment Mgt"
         end;
         if JsonObject.Get('name', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            InstalledApp."App Name" := JsonValue.AsText();
+            InstalledApp."App Name" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(InstalledApp."App Name"));
         end;
         if JsonObject.Get('publisher', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            InstalledApp."App Publisher" := JsonValue.AsText();
+            InstalledApp."App Publisher" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(InstalledApp."App Publisher"));
         end;
         if JsonObject.Get('version', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
-            InstalledApp."App Version" := JsonValue.AsText();
+            InstalledApp."App Version" := CopyStr(JsonValue.AsText(), 1, MaxStrLen(InstalledApp."App Version"));
         end;
         if JsonObject.Get('state', JsonTokenField) then begin
             JsonValue := JsonTokenField.AsValue();
@@ -468,14 +468,14 @@ codeunit 62000 "D4P BC Environment Mgt"
 
                 // Update the environment with the selected update information
                 if targetVersion <> '' then begin
-                    BCEnvironment."Target Version" := targetVersion;
+                    BCEnvironment."Target Version" := CopyStr(targetVersion, 1, MaxStrLen(BCEnvironment."Target Version"));
                     BCEnvironment."Available" := available;
-                    BCEnvironment."Target Version Type" := targetVersionType;
+                    BCEnvironment."Target Version Type" := CopyStr(targetVersionType, 1, MaxStrLen(BCEnvironment."Target Version Type"));
                     BCEnvironment."Selected DateTime" := selectedDateTime;
                     BCEnvironment."Latest Selectable Date" := latestSelectableDate;
                     BCEnvironment."Ignore Update Window" := ignoreUpdateWindow;
-                    BCEnvironment."Rollout Status" := rolloutStatus;
-                    BCEnvironment."Expected Availability" := expectedAvailability;
+                    BCEnvironment."Rollout Status" := CopyStr(rolloutStatus, 1, MaxStrLen(BCEnvironment."Rollout Status"));
+                    BCEnvironment."Expected Availability" := CopyStr(expectedAvailability, 1, MaxStrLen(BCEnvironment."Expected Availability"));
                     BCEnvironment.Modify();
                     if ShowMessage then
                         Message(SelectedUpdateVersionFetchedMsg, targetVersion);
@@ -613,7 +613,7 @@ codeunit 62000 "D4P BC Environment Mgt"
         end;
         //Update the app entry
         if InstalledApp.Get(BCTenant."Customer No.", BCTenant."Tenant ID", BCEnvironment.Name, appId) then begin
-            InstalledApp."Available Update Version" := appVersion;
+            InstalledApp."Available Update Version" := CopyStr(appVersion, 1, MaxStrLen(InstalledApp."Available Update Version"));
             InstalledApp.Modify();
         end;
     end;

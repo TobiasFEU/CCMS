@@ -1,3 +1,7 @@
+namespace D4P.CCMS.Extension;
+
+using D4P.CCMS.Environment;
+
 report 62000 "D4P Get Installed Apps"
 {
     ApplicationArea = All;

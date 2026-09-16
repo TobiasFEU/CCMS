@@ -8,6 +8,7 @@ page 62040 "D4P KQL Queries"
     SourceTable = "D4P KQL Query Store";
     Caption = 'KQL Queries';
     ApplicationArea = All;
+    UsageCategory = None;
 
     layout
     {
@@ -41,13 +42,16 @@ page 62040 "D4P KQL Queries"
             {
                 field(Code; Rec.Code)
                 {
+                    ToolTip = 'Specifies the unique code of the KQL query.';
                 }
                 field(Name; Rec.Name)
                 {
+                    ToolTip = 'Specifies the name of the KQL query.';
                 }
                 field(Description; Rec.Description)
                 {
                     Width = 40;
+                    ToolTip = 'Specifies the description of the KQL query.';
                 }
                 field(ResultTableID; Rec."Result Table ID")
                 {
@@ -73,6 +77,8 @@ page 62040 "D4P KQL Queries"
             {
                 Caption = 'Run Query';
                 Image = Start;
+                ToolTip = 'Runs the selected KQL query against the current environment.';
+
                 trigger OnAction()
                 var
                     AIConnectionSetup: Record "D4P AppInsights Connection";
@@ -101,6 +107,7 @@ page 62040 "D4P KQL Queries"
             {
                 Caption = 'Initialize Default Queries';
                 Image = Setup;
+                ToolTip = 'Initializes the default set of KQL queries.';
                 trigger OnAction()
                 var
                     Init: Codeunit "D4P KQL Query Store Init";

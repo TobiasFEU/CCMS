@@ -22,7 +22,7 @@ table 62003 "D4P BC Installed App"
             Caption = 'Tenant ID';
             ToolTip = 'Specifies the tenant identifier associated with the app.';
         }
-        field(3; "Environment Name"; Text[30])
+        field(3; "Environment Name"; Text[100])
         {
             Caption = 'Environment Name';
             ToolTip = 'Specifies the environment where the app is installed.';
@@ -98,5 +98,6 @@ table 62003 "D4P BC Installed App"
         {
             Clustered = true;
         }
+        key(Key2; "Customer No.", "Tenant ID", "Environment Name", "App Name") { }
     }
 }

@@ -76,6 +76,7 @@ page 62046 "D4P Device Code Authorization"
             {
                 Caption = 'Cancel';
                 InFooterBar = true;
+                Image = Cancel;
 
                 trigger OnAction()
                 begin

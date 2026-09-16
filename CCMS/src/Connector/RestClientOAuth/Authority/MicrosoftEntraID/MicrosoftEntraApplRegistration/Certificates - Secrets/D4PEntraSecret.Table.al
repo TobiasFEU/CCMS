@@ -25,7 +25,7 @@ table 62010 "D4P Entra Secret"
                 if Rec.Id = '' then
                     exit;
                 Evaluate(Guid, Rec.Id);
-                Rec.Id := Format(Guid, 0, 4).ToLower();
+                Rec.Id := CopyStr(Format(Guid, 0, 4).ToLower(), 1, MaxStrLen(Rec.Id));
             end;
         }
         field(3; "Isolated Storage Id"; Guid)
@@ -47,6 +47,7 @@ table 62010 "D4P Entra Secret"
         {
             Caption = 'End Date/Time';
             DataClassification = CustomerContent;
+
         }
         field(13; Hint; Text[3])
         {

@@ -204,7 +204,9 @@ page 62008 "D4P BC Installed Apps List"
             actionref(ScheduleSelectedAppsUpdatePromoted; ScheduleSelectedAppsUpdate)
             {
             }
+#pragma warning disable AL0432
             actionref(UpdateAppPromoted; UpdateApp)
+#pragma warning restore AL0432
             {
                 ObsoleteState = Pending;
                 ObsoleteReason = 'Use "Update Selected Apps" instead, which allows updating multiple apps at once.';

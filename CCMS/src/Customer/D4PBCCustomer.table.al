@@ -1,9 +1,9 @@
 namespace D4P.CCMS.Customer;
 
 using D4P.CCMS.Environment;
+using D4P.CCMS.PartnerCenter;
 using D4P.CCMS.Setup;
 using D4P.CCMS.Tenant;
-using D4P.CCMS.PartnerCenter;
 using Microsoft.Foundation.Address;
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Sales.Customer;
@@ -60,8 +60,14 @@ table 62000 "D4P BC Customer"
             end;
 
             trigger OnLookup()
+            var
+                lCity, lCounty : Text;
             begin
-                PostCode.LookupPostCode(City, "Post Code", County, "Country/Region Code");
+                lCity := City;
+                lCounty := County;
+                PostCode.LookupPostCode(lCity, "Post Code", lCounty, "Country/Region Code");
+                City := CopyStr(lCity, 1, MaxStrLen(City));
+                County := CopyStr(lCounty, 1, MaxStrLen(County));
             end;
         }
         field(6; "Post Code"; Code[20])
@@ -78,8 +84,14 @@ table 62000 "D4P BC Customer"
             end;
 
             trigger OnLookup()
+            var
+                lCity, lCounty : Text;
             begin
-                PostCode.LookupPostCode(City, "Post Code", County, "Country/Region Code");
+                lCity := City;
+                lCounty := County;
+                PostCode.LookupPostCode(lCity, "Post Code", lCounty, "Country/Region Code");
+                City := CopyStr(lCity, 1, MaxStrLen(City));
+                County := CopyStr(lCounty, 1, MaxStrLen(County));
             end;
         }
         field(7; County; Text[30])
@@ -94,8 +106,14 @@ table 62000 "D4P BC Customer"
             TableRelation = "Country/Region";
             ToolTip = 'Specifies the country/region code.';
             trigger OnValidate()
+            var
+                lCity, lCounty : Text;
             begin
-                PostCode.CheckClearPostCodeCityCounty(City, "Post Code", County, "Country/Region Code", xRec."Country/Region Code");
+                lCity := City;
+                lCounty := County;
+                PostCode.CheckClearPostCodeCityCounty(lCity, "Post Code", lCounty, "Country/Region Code", xRec."Country/Region Code");
+                City := CopyStr(lCity, 1, MaxStrLen(City));
+                County := CopyStr(lCounty, 1, MaxStrLen(County));
             end;
         }
         field(9; "Contact Person Name"; Text[100])

@@ -22,6 +22,7 @@ page 62041 "D4P KQL Query Preview"
                     MultiLine = true;
                     Caption = 'Query';
                     Editable = false;
+                    ToolTip = 'Displays the KQL query as text.';
                 }
             }
         }

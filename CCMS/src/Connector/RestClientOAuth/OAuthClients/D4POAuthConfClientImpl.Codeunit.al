@@ -71,7 +71,6 @@ codeunit 62039 "D4P OAuth Conf. Client Impl."
 
     local procedure SendTokenRequest(AccessTokenRequest: SecretText; OAuthAuthority: Interface "D4P OAuth Authority"; OAuthClientApplication: Codeunit "D4P OAuth Appl. Config") AuthenticationResult: Codeunit "D4P OAuth Result"
     var
-        HttpRequestMessage: Codeunit "Http Request Message";
         HttpResponseMessage: Codeunit "Http Response Message";
         HttpContent: Codeunit "Http Content";
         AccessTokenRequestTxt: SecretText;
@@ -133,7 +132,7 @@ codeunit 62039 "D4P OAuth Conf. Client Impl."
         OutStream: OutStream;
         InStream: InStream;
         JsonHeader, JsonClaims : JsonObject;
-        JsonText, Thumbprint, SignatureBase64 : Text;
+        JsonText, SignatureBase64 : Text;
         Now: DateTime;
     begin
         JsonHeader.Add('alg', 'RS256');

@@ -75,16 +75,16 @@ codeunit 62025 "D4P BC Operations Helper"
         Operation."Operation ID" := OperationID;
 
         // Get basic fields
-        Operation."Operation Type" := GetJsonText(JOperation, 'type');
-        Operation.Status := GetJsonText(JOperation, 'status');
-        Operation."AAD Tenant ID" := GetJsonText(JOperation, 'aadTenantId');
-        Operation."Created By" := GetJsonText(JOperation, 'createdBy');
+        Operation."Operation Type" := CopyStr(GetJsonText(JOperation, 'type'), 1, MaxStrLen(Operation."Operation Type"));
+        Operation.Status := CopyStr(GetJsonText(JOperation, 'status'), 1, MaxStrLen(Operation.Status));
+        Operation."AAD Tenant ID" := CopyStr(GetJsonText(JOperation, 'aadTenantId'), 1, MaxStrLen(Operation."AAD Tenant ID"));
+        Operation."Created By" := CopyStr(GetJsonText(JOperation, 'createdBy'), 1, MaxStrLen(Operation."Created By"));
         Operation."Error Message" := CopyStr(GetJsonText(JOperation, 'errorMessage'), 1, MaxStrLen(Operation."Error Message"));
 
         // Get environment fields (at root level)
-        Operation."Environment Name" := GetJsonText(JOperation, 'environmentName');
-        Operation."Environment Type" := GetJsonText(JOperation, 'environmentType');
-        Operation."Product Family" := GetJsonText(JOperation, 'productFamily');
+        Operation."Environment Name" := CopyStr(GetJsonText(JOperation, 'environmentName'), 1, MaxStrLen(Operation."Environment Name"));
+        Operation."Environment Type" := CopyStr(GetJsonText(JOperation, 'environmentType'), 1, MaxStrLen(Operation."Environment Type"));
+        Operation."Product Family" := CopyStr(GetJsonText(JOperation, 'productFamily'), 1, MaxStrLen(Operation."Product Family"));
 
         // Get datetime fields (time zone is UTC, convert to user time zone)
         Operation."Created On" := GetJsonDateTime(JOperation, 'createdOn');

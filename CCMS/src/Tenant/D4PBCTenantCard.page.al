@@ -8,6 +8,7 @@ using D4P.CCMS.Extension;
 page 62011 "D4P BC Tenant Card"
 {
     ApplicationArea = All;
+    UsageCategory = None;
     Caption = 'D365BC Entra Tenant Card';
     PageType = Card;
     SourceTable = "D4P BC Tenant";
