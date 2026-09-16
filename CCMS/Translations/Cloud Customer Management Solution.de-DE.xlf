@@ -4647,7 +4647,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P AppInsights Conn Card - Action ActionsGroup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 777859790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Application Insights Connection Setup</source>
+          <source>D365BC Application Insights</source>
           <target>Application Insights-Verbindungseinrichtung</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P AppInsights Conn List - Property Caption</note>
