@@ -476,6 +476,7 @@ codeunit 62000 "D4P BC Environment Mgt"
                     BCEnvironment."Ignore Update Window" := ignoreUpdateWindow;
                     BCEnvironment."Rollout Status" := CopyStr(rolloutStatus, 1, MaxStrLen(BCEnvironment."Rollout Status"));
                     BCEnvironment."Expected Availability" := CopyStr(expectedAvailability, 1, MaxStrLen(BCEnvironment."Expected Availability"));
+                    OnGetEnvironmentUpdatesOnBeforeModifyBCEnvironment(BCEnvironment);
                     BCEnvironment.Modify();
                     if ShowMessage then
                         Message(SelectedUpdateVersionFetchedMsg, targetVersion);
@@ -968,5 +969,10 @@ codeunit 62000 "D4P BC Environment Mgt"
                 Message(ConnectionStringSetMsg, BCEnvironment.Name);
         end else
             Error(FailedToSetKeyErr, ResponseText);
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnGetEnvironmentUpdatesOnBeforeModifyBCEnvironment(var BCEnvironment: Record "D4P BC Environment")
+    begin
     end;
 }
