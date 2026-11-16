@@ -9,6 +9,15 @@ codeunit 62000 "D4P BC Environment Mgt"
 {
     var
         AdminAPIClient: Codeunit D4PBCAdminAPIClient;
+        HideMessages: Boolean;
+
+    /// <summary>
+    /// Hides informational messages about success or empty results (useful for bulk processing).
+    /// </summary>
+    procedure SetHideMessages(Hide: Boolean)
+    begin
+        HideMessages := Hide;
+    end;
 
     procedure ShowDebugMessagePublic(ResponseText: Text; ActionName: Text)
     begin
@@ -779,7 +788,8 @@ codeunit 62000 "D4P BC Environment Mgt"
 
             if TotalUpdates = 0 then begin
                 ProgressDialog.Close();
-                Message(NoUpdatesFoundMsg, BCEnvironment.Name);
+                if not HideMessages then
+                    Message(NoUpdatesFoundMsg, BCEnvironment.Name);
                 exit;
             end;
 
@@ -880,7 +890,8 @@ codeunit 62000 "D4P BC Environment Mgt"
             ProgressDialog.Close();
         end else begin
             ProgressDialog.Close();
-            Message(NoUpdatesFoundMsg, BCEnvironment.Name);
+            if not HideMessages then
+                Message(NoUpdatesFoundMsg, BCEnvironment.Name);
         end;
     end;
 
@@ -931,11 +942,13 @@ codeunit 62000 "D4P BC Environment Mgt"
         if IsAvailable then begin
             BCEnvironment."Selected DateTime" := SelectedDateTime;
             BCEnvironment."Expected Availability" := '';
-            Message(UpdateScheduledMsg, TargetVersion, SelectedDate);
+            if not HideMessages then
+                Message(UpdateScheduledMsg, TargetVersion, SelectedDate);
         end else begin
             BCEnvironment."Selected DateTime" := 0DT;
             BCEnvironment."Expected Availability" := Format(ExpectedYear) + '/' + PadStr('', 2 - StrLen(Format(ExpectedMonth)), '0') + Format(ExpectedMonth);
-            Message(UpdateSelectedMsg, TargetVersion, ExpectedMonth, ExpectedYear);
+            if not HideMessages then
+                Message(UpdateSelectedMsg, TargetVersion, ExpectedMonth, ExpectedYear);
         end;
         BCEnvironment.Modify();
     end;
