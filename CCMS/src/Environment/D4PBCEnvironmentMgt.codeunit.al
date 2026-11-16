@@ -275,6 +275,41 @@ codeunit 62000 "D4P BC Environment Mgt"
         InstalledApp.Insert();
     end;
 
+    /// <summary>
+    /// Checks in the Admin Center API whether an update of the app is already scheduled or running
+    /// </summary>
+    local procedure IsAppUpdateAlreadyScheduled(BCTenant: Record "D4P BC Tenant"; BCEnvironment: Record "D4P BC Environment"; AppId: Guid): Boolean
+    var
+        JsonResponse, JsonOperation : JsonObject;
+        JsonToken, JsonTokenLoop : JsonToken;
+        OperationStatus, OperationType : Text;
+    begin
+        AdminAPIClient.SetTenant(BCTenant);
+        if not AdminAPIClient.Get(
+            '/applications/businesscentral/environments/' + BCEnvironment.Name + '/apps/' + Format(AppId) + '/operations', JsonResponse) then
+            exit(false);
+
+        if not JsonResponse.Get('value', JsonToken) then
+            exit(false);
+
+        foreach JsonTokenLoop in JsonToken.AsArray() do begin
+            JsonOperation := JsonTokenLoop.AsObject();
+
+            OperationType := '';
+            if JsonOperation.Get('type', JsonToken) then
+                OperationType := LowerCase(JsonToken.AsValue().AsText());
+            if (OperationType <> '') and (StrPos(OperationType, 'update') = 0) then
+                continue;
+
+            OperationStatus := '';
+            if JsonOperation.Get('status', JsonToken) then
+                OperationStatus := LowerCase(JsonToken.AsValue().AsText());
+            if OperationStatus in ['scheduled', 'running', 'queued'] then
+                exit(true);
+        end;
+        exit(false);
+    end;
+
     local procedure FillInstalledAppFromJsonObject(var InstalledApp: Record "D4P BC Installed App"; JsonObject: JsonObject)
     var
         JsonTokenField: JsonToken;
@@ -630,11 +665,18 @@ codeunit 62000 "D4P BC Environment Mgt"
         FailedToUpdateErr: Label 'Failed to update app: %1', Comment = '%1 = Error message';
         NoUpdateAvailableErr: Label 'No update available for this app';
         ResponseText: Text;
+        SkipIfAlreadyScheduled: Boolean;
     begin
         BCTenant.Get(BCEnvironment."Customer No.", BCEnvironment."Tenant ID");
 
         if not InstalledApp.Get(BCTenant."Customer No.", BCTenant."Tenant ID", BCEnvironment.Name, AppId) then
             Error(AppNotFoundErr);
+
+        SkipIfAlreadyScheduled := false;
+        OnUpdateAppOnBeforeCheckAlreadyScheduled(BCEnvironment, InstalledApp, SkipIfAlreadyScheduled);
+        if SkipIfAlreadyScheduled then
+            if IsAppUpdateAlreadyScheduled(BCTenant, BCEnvironment, AppId) then
+                exit;
 
         if InstalledApp."Available Update Version" = '' then
             Error(NoUpdateAvailableErr);
@@ -969,6 +1011,11 @@ codeunit 62000 "D4P BC Environment Mgt"
                 Message(ConnectionStringSetMsg, BCEnvironment.Name);
         end else
             Error(FailedToSetKeyErr, ResponseText);
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnUpdateAppOnBeforeCheckAlreadyScheduled(BCEnvironment: Record "D4P BC Environment"; InstalledApp: Record "D4P BC Installed App"; var SkipIfAlreadyScheduled: Boolean)
+    begin
     end;
 
     [IntegrationEvent(false, false)]
