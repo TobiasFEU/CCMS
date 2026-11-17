@@ -3729,6 +3729,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Last Update Attempt Result - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 388913379 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the scheduled update operation for this app.</source>
+          <target>Indique l'ID de l'opération de mise à jour planifiée pour cette application.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Scheduled Operation Id - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 388913379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Scheduled Operation Id</source>
+          <target>ID de l'opération planifiée</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Scheduled Operation Id - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3957244876 - Field 269761521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the current state of the app.</source>
           <target>Spécifie l'état actuel de l'application.</target>
@@ -3752,6 +3764,30 @@
           <target>ID abonné</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Tenant ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 3061644983 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the apps that must be installed or updated before this app can be updated.</source>
+          <target>Indique les applications à installer ou à mettre à jour avant de pouvoir mettre à jour cette application.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Update Requirements - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 3061644983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Requirements</source>
+          <target>Prérequis de la mise à jour</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Update Requirements - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 3966601175 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the update status of the app, as shown in the Business Central admin center.</source>
+          <target>Indique l'état de la mise à jour de l'application, tel qu'il s'affiche dans le centre d'administration de Business Central.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Update Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3957244876 - Field 3966601175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Status</source>
+          <target>État de la mise à jour</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table D4P BC Installed App - Field Update Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 348982333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>PTE Object Range</source>
@@ -4136,6 +4172,42 @@
           <target>PTE</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Type - EnumValue PTE - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 2874335705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Required</source>
+          <target>Action requise</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue Action Required - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 1370785684 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target>À jour</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue N/A - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 2888391108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Available</source>
+          <target>Mise à jour disponible</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue Update Available - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 769990494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Failed</source>
+          <target>Échec de la mise à jour</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue Update Failed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 862066620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update is Scheduled</source>
+          <target>Mise à jour planifiée</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue Update Scheduled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1190180176 - EnumValue 4044244568 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Updating</source>
+          <target>Mise à jour en cours</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum D4P App Update Status - EnumValue Updating - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 180238450 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Canceled</source>
