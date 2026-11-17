@@ -49,6 +49,14 @@ page 62008 "D4P BC Installed Apps List"
                 {
                     StyleExpr = UpdateAvailableStyleExpr;
                 }
+                field("Update Status"; Rec."Update Status")
+                {
+                    StyleExpr = UpdateAvailableStyleExpr;
+                }
+                field("Update Requirements"; Rec."Update Requirements")
+                {
+                    Visible = false;
+                }
                 field("Environment Type"; Rec."Environment Type")
                 {
                 }
@@ -325,7 +333,7 @@ page 62008 "D4P BC Installed Apps List"
         EnvironmentManagement: Codeunit "D4P BC Environment Mgt";
     begin
         EnvironmentManagement.SetHideMessages(true);
-        EnvironmentManagement.GetInstalledApps(BCEnvironment);
+        EnvironmentManagement.GetInstalledAppsWithUpdates(BCEnvironment);
     end;
 
     [TryFunction]
