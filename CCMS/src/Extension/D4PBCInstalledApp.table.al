@@ -90,6 +90,21 @@ table 62003 "D4P BC Installed App"
             Caption = 'Environment Type';
             ToolTip = 'Specifies the type of the environment where the app is installed.';
         }
+        field(17; "Update Status"; Enum "D4P App Update Status")
+        {
+            Caption = 'Update Status';
+            ToolTip = 'Specifies the update status of the app, as shown in the Business Central admin center.';
+        }
+        field(18; "Update Requirements"; Text[250])
+        {
+            Caption = 'Update Requirements';
+            ToolTip = 'Specifies the apps that must be installed or updated before this app can be updated.';
+        }
+        field(19; "Scheduled Operation Id"; Guid)
+        {
+            Caption = 'Scheduled Operation Id';
+            ToolTip = 'Specifies the ID of the scheduled update operation for this app.';
+        }
     }
 
     keys
@@ -100,4 +115,31 @@ table 62003 "D4P BC Installed App"
         }
         key(Key2; "Customer No.", "Tenant ID", "Environment Name", "App Name") { }
     }
+
+    /// <summary>
+    /// Derives the update status (like the "Update" column in the admin center) from the app state,
+    /// scheduled operations, update requirements and the available update version.
+    /// </summary>
+    procedure SetUpdateStatus()
+    begin
+        // The order of the checks defines the priority:
+        // - a running update (Updating) beats everything else,
+        // - a scheduled update beats open requirements, because they are resolved when the update runs,
+        // - without an available version there is nothing to do (N/A),
+        // - open requirements (Action Required) must be resolved before a failed update can be retried.
+        case true of
+            State = State::Updating:
+                "Update Status" := "Update Status"::Updating;
+            (State = State::"Update Pending") or not IsNullGuid("Scheduled Operation Id"):
+                "Update Status" := "Update Status"::"Update Scheduled";
+            "Available Update Version" = '':
+                "Update Status" := "Update Status"::"N/A";
+            "Update Requirements" <> '':
+                "Update Status" := "Update Status"::"Action Required";
+            "Last Update Attempt Result" = "Last Update Attempt Result"::Failed:
+                "Update Status" := "Update Status"::"Update Failed";
+            else
+                "Update Status" := "Update Status"::"Update Available";
+        end;
+    end;
 }
