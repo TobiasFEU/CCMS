@@ -1595,7 +1595,7 @@
         </trans-unit>
         <trans-unit id="Page 874423548 - Control 1116687131 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the End Date/Time field.</source>
-          <target>Spécifie la valeur du champ Date/heure fin.</target>
+          <target>Spécifie la valeur du champ Date/heure de fin.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P Entra Secret Subform - Control End Date/Time - Property ToolTip</note>
         </trans-unit>
@@ -3329,13 +3329,13 @@
         </trans-unit>
         <trans-unit id="Page 4116547146 - Action 845002573 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Select and schedule an update version for the environment.</source>
-          <target>Sélectionnez et planifiez une version de mise à jour pour l'environnement.</target>
+          <target>Sélectionne et planifie une version de mise à jour pour l'environnement.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Environment List - Action RescheduleUpdate - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4116547146 - Action 845002573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Reschedule Update</source>
-          <target>Reprogrammer la mise à jour</target>
+          <target>Replanifier la mise à jour</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Environment List - Action RescheduleUpdate - Property Caption</note>
         </trans-unit>
@@ -3947,13 +3947,13 @@
         </trans-unit>
         <trans-unit id="Page 3922837368 - Action 436263975 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Schedule the selected app to be updated to the latest version. The app will be updated in the next environment update window.</source>
-          <target>Planifier la mise à jour de l'application sélectionnée vers la dernière version. L'application sera mise à jour dans la prochaine fenêtre de mise à jour de l'environnement.</target>
+          <target>Planifie la mise à jour de l'application sélectionnée vers la dernière version. L'application sera mise à jour lors de la prochaine fenêtre de mise à jour de l'environnement.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed App Card - Action ScheduleAppUpdate - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3922837368 - Action 436263975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Schedule App Update</source>
-          <target>Planifier mise à jour de l'application</target>
+          <target>Planifier la mise à jour de l'application</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed App Card - Action ScheduleAppUpdate - Property Caption</note>
         </trans-unit>
@@ -3993,9 +3993,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1896412547 - Method 1734414723 - NamedType 262470439" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is no environment matching the current filters.</source>
+          <target>Aucun environnement ne correspond aux filtres actuels.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Method GetTargetEnvironments - NamedType NoEnvironmentMsg</note>
+        </trans-unit>
         <trans-unit id="Page 1896412547 - Action 389138476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Delete all fetched installed apps records.</source>
-          <target>Supprimer tous les enregistrements d'applications installées récupérés.</target>
+          <source>Delete the selected installed apps records.</source>
+          <target>Supprime les enregistrements d'applications installées sélectionnés.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action DeleteAll - Property ToolTip</note>
         </trans-unit>
@@ -4012,14 +4018,14 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action DeleteAll - Method OnAction - NamedType DeletedSuccessMsg</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 389138476 - Method 1377591017 - NamedType 407090172" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Are you sure you want to delete all %1 fetched installed apps records?</source>
-          <target>Êtes-vous sûr de vouloir supprimer tous les enregistrements d'applications installées récupérés (%1) ?</target>
+          <source>Are you sure you want to delete %1 fetched installed apps record(s)?</source>
+          <target>Êtes-vous sûr de vouloir supprimer %1 enregistrement(s) d'applications installées récupéré(s) ?</target>
           <note from="Developer" annotates="general" priority="2">%1 = Number of records</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action DeleteAll - Method OnAction - NamedType DeleteMsg</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 227458231 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get the list of available apps updates for the selected environment.</source>
-          <target>Obtenir la liste des mises à jour d'applications disponibles pour l'environnement sélectionné.</target>
+          <source>Get the list of available apps updates for the environments of the selected apps. If the list is empty, the environments matching the current filters are used.</source>
+          <target>Obtient la liste des mises à jour d'applications disponibles pour les environnements des applications sélectionnées. Si la liste est vide, les environnements correspondant aux filtres actuels sont utilisés.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetAvailableUpdates - Property ToolTip</note>
         </trans-unit>
@@ -4030,14 +4036,20 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetAvailableUpdates - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 227458231 - Method 1377591017 - NamedType 3527802784" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Do you want to get available app updates for all tenants and all environments?</source>
-          <target>Voulez-vous récupérer les mises à jour disponibles des applications pour tous les locataires et tous les environnements ?</target>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Do you want to get the available app updates for %1 environment(s)?</source>
+          <target>Voulez-vous récupérer les mises à jour d'applications disponibles pour %1 environnement(s) ?</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Number of environments</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetAvailableUpdates - Method OnAction - NamedType ConfirmationGetAvailableUpdatesQst</note>
         </trans-unit>
+        <trans-unit id="Page 1896412547 - Action 227458231 - Method 1377591017 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Available app updates retrieved for %1 environment(s), %2 failure(s).</source>
+          <target>Mises à jour d'application disponibles récupérées pour %1 environnement(s), %2 échec(s).</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Number of environments, %2 = Number of failures</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetAvailableUpdates - Method OnAction - NamedType DoneMsg</note>
+        </trans-unit>
         <trans-unit id="Page 1896412547 - Action 4242874840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get the list of installed apps for the selected environment.</source>
-          <target>Obtenir la liste des applications installées pour l'environnement sélectionné.</target>
+          <source>Get the list of installed apps for the environments of the selected apps. If the list is empty, the environments matching the current filters are used.</source>
+          <target>Obtient la liste des applications installées pour les environnements des applications sélectionnées. Si la liste est vide, les environnements correspondant aux filtres actuels sont utilisés.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetInstalledApps - Property ToolTip</note>
         </trans-unit>
@@ -4048,20 +4060,26 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetInstalledApps - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 4242874840 - Method 1377591017 - NamedType 2204770031" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Do you want to get installed apps for all tenants and all environments?</source>
-          <target>Voulez-vous récupérer les applications installées pour tous les locataires et tous les environnements ?</target>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Do you want to get the installed apps for %1 environment(s)?</source>
+          <target>Voulez-vous récupérer les applications installées pour %1 environnement(s) ?</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Number of environments</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetInstalledApps - Method OnAction - NamedType ConfirmationGetInstalledAppsQst</note>
+        </trans-unit>
+        <trans-unit id="Page 1896412547 - Action 4242874840 - Method 1377591017 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Installed apps retrieved for %1 environment(s), %2 failure(s).</source>
+          <target>Applications installées récupérées pour %1 environnement(s), %2 échec(s).</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Number of environments, %2 = Number of failures</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action GetInstalledApps - Method OnAction - NamedType DoneMsg</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 593068721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Schedule the selected apps to be updated to the latest version. The apps will be updated in the next environment update window.</source>
-          <target>Planifier la mise à jour des applications sélectionnées vers la dernière version. Les application seront mises à jour dans la prochaine fenêtre de mise à jour de l'environnement.</target>
+          <target>Planifie la mise à jour des applications sélectionnées vers la dernière version. Les applications seront mises à jour lors de la prochaine fenêtre de mise à jour de l'environnement.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action ScheduleSelectedAppsUpdate - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1896412547 - Action 593068721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Schedule Selected Apps Update</source>
-          <target>Planifier mise à jour applications sélectionnées</target>
+          <target>Planifier la mise à jour des applications sélectionnées</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P BC Installed Apps List - Action ScheduleSelectedAppsUpdate - Property Caption</note>
         </trans-unit>
@@ -6311,7 +6329,7 @@
         </trans-unit>
         <trans-unit id="Page 620516318 - Action 2792699792 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Initializes the default set of KQL queries.</source>
-          <target>Initialise l'ensemble par défaut des requêtes KQL.</target>
+          <target>Initialise l'ensemble par défaut de requêtes KQL.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page D4P KQL Queries - Action InitializeQueries - Property ToolTip</note>
         </trans-unit>
